@@ -72,13 +72,17 @@ function crearProducto(productos){
         var card=document.createElement('div');
         card.classList.add('col-md-4', 'product-card');
 
-        var cardContenido=` <div class="card">
+        var cardContenido=` 
+        <form>
+        <div class="card">
         <img src="${producto.imagen}" class="card-img-top">
         <div class="card-body">
         <h3>"${producto.nombre}"</h3>
         <p>"${producto.precio}Bs"</p>
+        <button type="submit" class="agregar" id="agregar">Agregar al Carrito</button>
         </div>
         </div>
+        </fom>
         `;
         card.innerHTML=cardContenido
 
