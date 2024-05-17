@@ -15,6 +15,11 @@ servidor.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
+
+//Ruta Carrito
+servidor.get('/carrito',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public','carrito.html'));
+});
 //Ruta Productos
 servidor.get('/productos',(req,res)=>{
     res.sendFile(path.join(__dirname,'public','productos.html'));

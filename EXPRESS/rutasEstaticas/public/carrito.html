@@ -7,5 +7,20 @@
 </head>
 <body>
     <h1>Carrito de Compras</h1>
+    <ul id="lista-carrito">
+
+    </ul>
+    <script>
+        //Obtener el producto seleccionado por el usuario
+        const nombreProducto=decodeURIComponent(window.location.pathname.split('/').pop());
+
+        //Crear de forma dinamica la lista de productos agregados al carrito
+        const lista=document.getElementById('lista-carrito');
+        const itemsLista=document.createElement('li');
+        itemsLista.textContent=nombreProducto;
+        lista.appendChild(itemsLista);
+        
+
+    </script>
 </body>
 </html>

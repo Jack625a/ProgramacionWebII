@@ -84,11 +84,21 @@ function crearProducto(productos){
         </div>
         </fom>
         `;
+
+        
+        
         card.innerHTML=cardContenido
 
         contenedor.appendChild(card);
     });
+    document.getElementById('agregar').addEventListener('click',function(){
+        const nombreProducto=`${producto.nombre}`;
+        //redireccionamiento a la ruta para agregar al carrito
+        window.location.href=`/productos/${encodeURIComponent(nombreProducto)}`;
+    });
 }
+
+
 //fUNCION PARA FILTRAR LOS PRODUCTOS POR LA CATEGORIA
 function filtrarProductos(categoria){
     var todosProductos=[];
