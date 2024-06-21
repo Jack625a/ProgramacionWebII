@@ -1,0 +1,15 @@
+.inicio{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    margin: 20px;
+}
+.imagen{
+    width: 600px;
+    height: 700px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+
+}
