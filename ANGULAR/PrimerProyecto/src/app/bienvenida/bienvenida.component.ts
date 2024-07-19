@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './bienvenida.component.css'
 })
 export class BienvenidaComponent {
+  tareas: string[] = [];
+  nuevaTarea: string = '';
 
+  agregarTarea() {
+    if (this.nuevaTarea) {
+      this.tareas.push(this.nuevaTarea);
+      this.nuevaTarea = '';
+    }
+  }
 }
