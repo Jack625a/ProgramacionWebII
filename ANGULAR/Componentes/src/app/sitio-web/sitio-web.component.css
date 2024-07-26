@@ -1,0 +1,38 @@
+h1{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: crimson;
+    margin-top: 20px;
+    
+}
+.sitio{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: rgb(215, 227, 136);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sitio img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+form{
+    padding: 30px;
+}
+label{
+    font-size: 18px;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+input{
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    
+}
