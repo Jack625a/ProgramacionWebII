@@ -1,0 +1,39 @@
+.tareas-contenedor{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 30px;
+
+}
+button{
+    margin: 10px;
+    padding: 10px 10px ;
+    font-size: 16px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    color: beige;
+}
+.completar{
+    margin: 10px;
+    padding: 10px 10px ;
+    font-size: 16px;
+    background-color: rgb(43, 226, 73);
+    border: none;
+    border-radius: 10px;
+    color: beige;
+}
+.completar:hover{
+    background-color: rgb(235, 46, 68);
+}
+li{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.eliminar{
+    background-color: rgb(226, 43, 83);
+}
