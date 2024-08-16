@@ -1,0 +1,27 @@
+.tarjeta{
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+.tarjeta img{
+    max-width: 100%;
+    height: auto;
+}
+.tarjeta h3{
+    margin: 8px 0;
+    font-weight: bold;
+    
+}
+.tarjeta p{
+    font-weight: bold;
+}
+.tarjeta:hover{
+   
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5)
+}

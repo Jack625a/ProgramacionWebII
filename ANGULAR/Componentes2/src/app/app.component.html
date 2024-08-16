@@ -73,6 +73,16 @@
 </app-datos>
 
 </div>
+<br>
+<div class="datos">
+    <app-datos2
+    *ngFor="let producto of productos"
+    [nombre]="producto.nombre"
+    [descripcion]="producto.descripcion"
+    [precio]="producto.precio"
+    [imagenUrl]="producto.imagenUrl"
+    ></app-datos2>
+</div>
 
 <app-footer></app-footer>
 <router-outlet />
