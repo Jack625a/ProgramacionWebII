@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+//Para la entradad de datos
 
 @Component({
   selector: 'app-datos',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './datos.component.css'
 })
 export class DatosComponent {
-
+@Input() nombre: string='';
+@Input() precio: number=0;
+@Input() imagenUrl: string='';
+@Input() descripcion: string='';
 }
