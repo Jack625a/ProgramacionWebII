@@ -1,0 +1,20 @@
+mat-card{
+    max-width: 400px;
+}
+mat-card-image{
+    max-height: 200px;
+    object-fit: cover;
+}
+mat-card-title{
+    color: rgb(20, 54, 99);
+}
+.imagen-header{
+    background-image: url('https://www.lasalut.es/wp-content/uploads/2024/02/shiba.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+mat-card-content{
+    color: rgb(0, 0, 0);
+    padding: 16px;
+
+}
