@@ -7,6 +7,7 @@ import { ListasComponent } from './listas/listas.component';
 import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
+import { NavegacionComponent } from './navegacion/navegacion.component';
 
 
 
@@ -20,7 +21,8 @@ import { CardComponent } from './card/card.component';
     ListasComponent,
     MatListModule,
     CommonModule,
-    CardComponent
+    CardComponent,
+    NavegacionComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
