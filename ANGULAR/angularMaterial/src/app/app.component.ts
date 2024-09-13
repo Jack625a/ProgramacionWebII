@@ -8,6 +8,8 @@ import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
+import { AlertasComponent } from './alertas/alertas.component';
+
 
 
 
@@ -22,7 +24,9 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
     MatListModule,
     CommonModule,
     CardComponent,
-    NavegacionComponent
+    NavegacionComponent,
+    AlertasComponent
+   
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,8 +1,15 @@
-<mat-tab-group>
+<mat-tab-group >
     <mat-tab 
         label="Inicio"
     >
-        <h1>Pantalla Inicio</h1>
+    <ng-template mat-tab-label>
+        <mat-icon>
+            face
+        </mat-icon>
+         Prueba
+    </ng-template>
+       
+        <h3>Pantalla Inicio</h3>
         <button mat-button>Boton Prueba</button>
         <br>
         <button mat-raised-button>Prueba 2</button>
@@ -36,7 +43,7 @@
     <mat-tab
         label="Servicios"
     >
-    <h2>Pantalla Servicios</h2>
+   <button mat-button (click)="mostrarAlerta()"> Probar Alertas </button>
 
     </mat-tab>
     <mat-tab
