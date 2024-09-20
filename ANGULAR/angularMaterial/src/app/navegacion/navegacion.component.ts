@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { ListasComponent } from '../listas/listas.component';
 import { CardComponent } from '../card/card.component';
 import { AlertasComponent } from '../alertas/alertas.component';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
-
-
+import { AlertaInferiorComponent } from '../alerta-inferior/alerta-inferior.component';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
 
 @Component({
   selector: 'app-navegacion',
@@ -19,8 +21,10 @@ import { CommonModule } from '@angular/common';
     ListasComponent,
     CardComponent,
     //AlertasComponent,
-    MatDialog,
+    MatDialogModule,
     CommonModule,
+    AlertaInferiorComponent,
+    MatBottomSheetModule
     
    
   ],
@@ -29,6 +33,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NavegacionComponent {
   constructor(public dialogo:MatDialog){}
+  private alertaInferior=inject(MatBottomSheet) //Inyector para la alerta inferior
  //funcion para mostrar la alerta
  mostrarAlerta():void{
   const alertaPantalla=this.dialogo.open(AlertasComponent, {
@@ -41,5 +46,10 @@ export class NavegacionComponent {
       console.log('Mensaje de Confirmacion');
     }
   });
+ }
+ //Metodo Para mostrar la alerta Inferior
+ abrirAlertaInferior():void{
+  this.alertaInferior.open(AlertaInferiorComponent);
+
  }
 }
