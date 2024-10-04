@@ -1,0 +1,35 @@
+.imagen img{
+    width: 95%;
+    margin: 30px;
+}
+.contenedor-Botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+.contenedorCards{
+    width: 350px;
+    height: 500px;
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    box-sizing: border-box;
+  
+
+
+}
+.contenedorCards img{
+    width: 100%;
+   
+}
+.botonesCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
