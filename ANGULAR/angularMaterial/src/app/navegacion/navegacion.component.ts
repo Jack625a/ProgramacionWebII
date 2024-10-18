@@ -11,6 +11,8 @@ import { AlertaInferiorComponent } from '../alerta-inferior/alerta-inferior.comp
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-navegacion',
@@ -24,7 +26,9 @@ import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
     MatDialogModule,
     CommonModule,
     AlertaInferiorComponent,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule
     
    
   ],
