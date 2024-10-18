@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { AlertasComponent } from './alertas/alertas.component';
-
+import { CabeceraComponent } from './cabecera/cabecera.component';
 
 
 
@@ -25,7 +25,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     CommonModule,
     CardComponent,
     NavegacionComponent,
-    AlertasComponent
+    AlertasComponent,
+    CabeceraComponent
    
   ],
   templateUrl: './app.component.html',
