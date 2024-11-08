@@ -1,0 +1,20 @@
+<div class="contenedor">
+    <h1>Productos </h1>
+    <p *ngFor="let producto of productos">{{producto.nombre}}</p>
+    <mat-card *ngFor="let producto of productos" class="contenedorCard">
+        <mat-card-header>
+            <mat-card-title>
+                {{producto.nombre}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{producto.precio}} Bs
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="producto.imagen"/>
+        <mat-card-actions>
+            <button mat-button>Ver mas</button>
+        </mat-card-actions>
+
+    </mat-card>
+
+</div>
